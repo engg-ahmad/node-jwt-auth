@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "npm run db-migrations; ts-node src/index.ts",
     "dev": "npm run db-migrations; nodemon --exec npx ts-node src/index.ts",
     "db-migrations": "npm run knex-migrate",
     "knex-migrate": "knex migrate:latest",
