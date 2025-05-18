@@ -1,8 +1,8 @@
 import postgresDB from '../adapters/postgres';
 
 interface User {
-    email: string;
-    password: string;
+  email: string;
+  password: string;
 }
 
 async function createUser (user: User): Promise<any> {
